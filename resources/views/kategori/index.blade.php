@@ -26,6 +26,12 @@
                         </h4>
                     </div>
                     <div class="panel-body">
+                        @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                        @endif
+
                         <table class="table table-hover">
                             <tr>
                                 <td># </td>
@@ -33,12 +39,23 @@
                                 <td>Deksripsi</td>
                                 <td>Action</td>
                             </tr>
+                            <?php $no = 1; ?>
                             @foreach ($kategori as $row)
                             <tr>
-                                <td></td>
+                                <td>{{ $no++ }}</td>
                                 <td>{{ $row->name }}</td>
                                 <td>{{ $row->description }}</td>
-                                <td></td>
+                                <td>
+                                    {!! Form::open(['url' => '/kategori/' . $row->id, 'method' => 'DELETE']) !!}
+                                    <a href="{{ url('/kategori/' . $row->id) }}" 
+                                        class="btn btn-warning btn-sm">
+                                        Edit
+                                    </a>
+                                    <button class="btn btn-danger btn-sm">
+                                        Hapus
+                                    </button>
+                                    {!! Form::close() !!}
+                                </td>
                             </tr>
                             @endforeach
                         </table>
