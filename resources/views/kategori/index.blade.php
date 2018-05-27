@@ -25,15 +25,22 @@
                             </a>
                         </h4>
                     </div>
-                    
                     <div class="panel-body">
                         <table class="table table-hover">
                             <tr>
-                                <td># {{ $saya }}</td>
+                                <td># </td>
                                 <td>Nama Kategori</td>
                                 <td>Deksripsi</td>
                                 <td>Action</td>
                             </tr>
+                            @foreach ($kategori as $row)
+                            <tr>
+                                <td></td>
+                                <td>{{ $row->name }}</td>
+                                <td>{{ $row->description }}</td>
+                                <td></td>
+                            </tr>
+                            @endforeach
                         </table>
                     </div>
                 </div>

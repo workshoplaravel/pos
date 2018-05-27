@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/kategori', 'CategoryController@index');
+Route::get('/kategori/tambah', 'CategoryController@tambah');
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
