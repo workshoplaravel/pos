@@ -17,48 +17,12 @@
                     </a>
                     <ul class="site-menu-sub">
                         <li class="site-menu-item active">
-                            <a class="animsition-link" href="{{ route('semester.index') }}">
+                            <a class="animsition-link" href="#">
                                 <span class="site-menu-title">Semester</span>
                             </a>
                         </li>
-                        <li class="site-menu-item active">
-                            <a class="animsition-link" href="{{ route('jurusan.index') }}">
-                                <span class="site-menu-title">Jurusan</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item active">
-                            <a class="animsition-link" href="{{ route('kelas.index') }}">
-                                <span class="site-menu-title">Kelas</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item active">
-                            <a class="animsition-link" href="{{ route('matkul.index') }}">
-                                <span class="site-menu-title">Mata Kuliah</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item active">
-                            <a class="animsition-link" href="{{ route('mahasiswa.index') }}">
-                                <span class="site-menu-title">Mahasiswa</span>
-                            </a>
-                        </li>
-                        <li class="site-menu-item active">
-                            <a class="animsition-link" href="{{ route('dosen.index') }}">
-                                <span class="site-menu-title">Dosen</span>
-                            </a>
-                        </li>
+                        
                     </ul>
-                </li>
-                <li class="site-menu-item has-sub">
-                    <a href="{{ route('user.index') }}">
-                        <i class="site-menu-icon md-card" aria-hidden="true"></i>
-                        <span class="site-menu-title">USER</span>
-                    </a>
-                </li>
-                <li class="site-menu-item has-sub">
-                    <a href="{{ route('transaksi.index') }}">
-                        <i class="site-menu-icon md-card" aria-hidden="true"></i>
-                        <span class="site-menu-title">TRANSAKSI</span>
-                    </a>
                 </li>
             </ul>
             <div class="site-menubar-section">
